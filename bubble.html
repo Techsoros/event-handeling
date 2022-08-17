@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble</title>
+</head>
+
+<body id="body">
+    <h1>Checking Bubble</h1>
+    <ul id="list-box">
+        <li id="li1">I a list item-1</li>
+        <li id="li2" class="even">I a list item-2</li>
+        <li id="li3">I a list item-3</li>
+        <li id="li4" class="even">I a list item-4</li>
+        <li id="li5">I a list item-5</li>
+        <li id="li6" class="even">I a list item-6</li>
+        <li id="li7">I a list item-7</li>
+        <li id="li8" class="even">I a list item-8</li>
+        <li id="li9">I a list item-9</li>
+        <li id="li10" class="even">I a list item-10</li>
+    </ul>
+
+    <script>
+        let li4 = document.getElementById('li4');
+        li4.addEventListener('click', function (event) {
+            console.log('Li 4 CLicked once');
+            event.stopImmediatePropagation();
+
+        })
+        li4.addEventListener('click', function (event) {
+            console.log('Li 4 CLicked twice');
+
+        })
+        li4.addEventListener('click', function (event) {
+            console.log('Li 4 CLicked thrice');
+
+        })
+
+
+        let ul = document.getElementById('list-box');
+        ul.addEventListener('click', function () {
+            console.log('Ul Clicked');
+
+        })
+        let body = document.getElementById('body');
+        body.addEventListener('click', function () {
+            console.log('body Clicked');
+        })
+    </script>
+
+</body>
+
+</html>
