@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        #post,
+        #form {
+            width: 80%;
+            margin: 0 auto;
+            font-family: 'Poppins', sans-serif;
+            color: #101010;
+            text-align: center;
+
+
+        }
+
+        article {
+            width: 600px;
+            margin: 30px auto;
+            background-color: lightsalmon;
+            padding: 30px;
+
+            border-radius: 30px;
+            box-shadow: 2px 0 10px 1px gray;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        textarea {
+            display: block;
+            margin: 20px auto;
+            width: 600px;
+            font-family: 'Poppins', sans-serif;
+            color: #101010;
+            padding: 20px;
+            outline: 3px solid tomato;
+            border: none;
+            border-radius: 30px;
+
+
+        }
+
+        button {
+            background: #ddd;
+            padding: 10px 30px;
+            display: inline-block;
+            margin: 20px 10px;
+            border-radius: 30px;
+            border: 1px solid #eee;
+            cursor: pointer;
+            transition: all .3s;
+
+
+        }
+
+        button:hover {
+            color: rgb(244, 238, 74);
+            background-color: #101010;
+        }
+
+        button:focus {
+            color: #101010;
+            border: 1px solid blue;
+            background-color: tomato;
+        }
+
+        #input-name {
+            width: 300px;
+            padding: 5px;
+            font-family: 'Poppins', sans-serif;
+            outline: 1px solid rgb(0, 145, 255);
+            border: 2px solid #ddd;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="post">
+        <h1 class="text-center">Welcome to CSE FareWell</h1>
+        <p class="text-center">Share your Feelings here</p>
+
+        <article>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae temporibus accusantium perspiciatis eum
+                laudantium similique vero repudiandae magnam illo. Eligendi soluta alias quisquam rerum, quo enim nemo
+                accusamus reprehenderit. Fuga voluptate tempora rem magnam aliquid quam inventore error necessitatibus
+                illum quibusdam vero iusto, illo vitae ducimus veritatis impedit esse aut?
+            </p>
+
+            <h4 class="authorName">- Liakot Linkon</h4>
+        </article>
+
+
+
+    </section>
+    <section id="form">
+        <textarea name="" id="post-box" cols="30" rows="6" placeholder="write your Feelings"></textarea>
+        <input type="text" placeholder="Insert your Name Here " id="input-name">
+        <button id="btn-post">Post now</button>
+    </section>
+
+
+    <script src="post.js"></script>
+</body>
+
+</html>

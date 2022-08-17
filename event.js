@@ -49,6 +49,7 @@ document.getElementById('name-update').addEventListener('click', function () {
     if (userName.length != 0) {
 
         document.getElementById('user-name').innerText = userName;
+        document.getElementById('input-name').value = "";
     }
 
 });

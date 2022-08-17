@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Events</title>
+</head>
+
+<body>
+    <h1>Explore more Events </h1>
+    <button id="btn-more">Click me </button>
+    <input type="text" name="" id="text">
+
+
+    <script>
+        let getBtn = document.getElementById('btn-more');
+        let input = document.getElementById('text');
+        let c = 0,
+            b = 0,
+            f = 0,
+            l = 0,
+            m = 0,
+            e = 0;
+
+        getBtn.addEventListener('click', function () {
+            console.log(++c + ' - you Click me!');
+        })
+        getBtn.addEventListener('mouseenter', function () {
+            console.log(++e + ' - you Enter in my area ');
+        })
+        getBtn.addEventListener('mousemove', function () {
+            console.log(++m + ' - you move in my area ');
+        })
+        getBtn.addEventListener('mouseleave', function () {
+            console.log(++l + ' - you leave from my area ');
+        })
+
+        input.addEventListener('focus', function () {
+            console.log(++f + ' - you are attempting to write something!! ');
+        })
+        input.addEventListener('blur', function () {
+            console.log(++f + ' - you are leaving the input area ');
+        })
+        // input.addEventListener('keypress', function (event) {
+        //     console.log(event.target.value);
+        // })
+        input.addEventListener('keydown', function (event) {
+            console.log(event.target.value);
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete</title>
+</head>
+
+<body>
+    <h2>My Github Repositories</h2>
+    <hr>
+    <p id="r1">My Repository 1 </p>
+    <input type="text" id="delete-confirmation" placeholder="Type DELETE to remove it">
+    <button id="delete" disabled>Delete this Repository</button>
+    <hr>
+
+
+    <script>
+        let r = document.getElementById('r1');
+        let input = document.getElementById('delete-confirmation');
+        let act = document.getElementById('delete');
+        input.addEventListener('keyup', function (event) {
+            let text = event.target.value;
+            if (text == 'DELETE') {
+                act.removeAttribute('disabled');
+            } else {
+                act.setAttribute('disabled', '');
+                console.log('Disabled it again');
+            }
+
+        })
+        act.addEventListener('click', function () {
+            r.style.display = "none";
+        })
+    </script>
+
+</body>
+
+</html>
