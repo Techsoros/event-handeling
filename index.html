@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Practice</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        #heading {
+            text-align: center;
+            background: rgba(10, 0, 2, 0.1);
+            color: #101010;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .body-wrap {
+            font-family: 'Poppins', sans-serif;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        button {
+            background: #ddd;
+            padding: 10px 30px;
+            display: inline-block;
+            margin: 20px 10px;
+            border-radius: 30px;
+            border: 1px solid #eee;
+            cursor: pointer;
+            transition: all .3s;
+
+
+        }
+
+        button:hover {
+            color: rgb(244, 238, 74);
+            background-color: #101010;
+        }
+
+        button:focus {
+            color: #101010;
+            border: 1px solid blue;
+            background-color: tomato;
+        }
+
+        #input-name {
+            width: 300px;
+            padding: 5px;
+            font-family: 'Poppins', sans-serif;
+            outline: 1px solid rgb(0, 145, 255);
+            border: 2px solid #ddd;
+            font-size: 20px;
+        }
+
+        input[type=color] {
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+            border: 5px solid orange;
+            overflow: hidden;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="heading">
+        <p id="heading-text"></p>
+    </div>
+    <div class="body-wrap">
+
+        <h1>Hello <span id="user-name">Ferdous</span> !</h1>
+        <hr> <br>
+        <button id="makeRed">Make Page Red</button>
+        <button onclick="makeBlue()" id="blue">Make Page Blue</button>
+        <button id="makeYellow">Make Page Yellow</button>
+        <button id="makeGolden">Make Page golden</button>
+        <br><br> You can set Custom Color also <br> <br>
+        <input type="color" name="" id="page-color" onclick="setcolor(value)" onchange="setcolor(value)"
+            value='#ffffff'>
+        <hr>
+        <br>
+        <button id="reset">Reset Style</button>
+
+        <br>
+        <br> <br>
+        <input type="text" name="" id="input-name"> <br> <br>
+        <button id="name-update">Update Name</button>
+    </div>
+
+
+
+
+
+    <script src="event.js"></script>
+</body>
+
+</html>
