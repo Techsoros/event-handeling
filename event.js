@@ -60,7 +60,13 @@ function setcolor(color) {
     //let color = document.getElementById('page-color').value;
     document.body.style.backgroundColor = color;
 
-    document.getElementById('heading-text').innerText = "Page is now " + color;
+    if (color != "#ffffff") {
+
+        document.getElementById('heading-text').innerText = "Page is now " + color;
+    } else {
+        document.getElementById('heading-text').innerText = "";
+    }
+
 
 
 }
